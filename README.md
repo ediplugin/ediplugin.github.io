@@ -1,4 +1,4 @@
-Плагин **EDI - Обмен данными между WooCommerce и 1С** позволяет осуществлять обмен данными между [WooCommerce](https://wordpress.org/plugins/woocommerce/) и [1С](https://v8.1c.ru/).
+Плагин **[EDI - Обмен данными между WooCommerce и 1С](https://wordpress.org/plugins/e-commerce-data-interchange/)** позволяет осуществлять обмен данными между [WooCommerce](https://wordpress.org/plugins/woocommerce/) и [1С](https://v8.1c.ru/).
 
 
 ### ⚠️ ВНИМАНИЕ ⚠️  
