@@ -29,4 +29,5 @@
 ✅ Индикация процесса синхронизации.  
 ✅ Возможность в любой момент прервать процесс синхронизации.
 
+<small>Левашов Александр Владимирович, ИНН 940200303041</small>
 <a href="https://github.com/ediplugin/e-commerce-data-interchange" style="position:fixed;top:0;right:0;"><img decoding="async" width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_red_aa0000.png?resize=149%2C149" class="attachment-full size-full" alt="Fork me on GitHub" loading="lazy" data-recalc-dims="1"></a>
