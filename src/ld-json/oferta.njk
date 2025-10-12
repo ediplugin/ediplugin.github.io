@@ -1,0 +1,41 @@
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Публичная оферта",
+        "url": "{{ ldJson.siteUrl }}/oferta",
+        "inLanguage": "{{ ldJson.website.inLanguage }}",
+        "datePublished": "ЗАМЕНИТЕ_YYYY-MM-DD",
+        "dateModified": "ЗАМЕНИТЕ_YYYY-MM-DD",
+        "isPartOf": {
+            "@type": "WebSite",
+            "url": "{{ ldJson.siteUrl }}"
+        },
+        "about": {
+            "@type": "Service",
+            "name": "{{ ldJson.service.name }}",
+            "url": "{{ ldJson.service.url }}"
+        },
+        "publisher": {
+            "@type": "Person",
+            "name": "{{ ldJson.person.name }}",
+            "url": "{{ ldJson.person.url }}"
+        }
+    }
+</script>
+
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {{ ldJson.breadcrumbBase | dump }},
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Публичная оферта",
+                "item": "{{ ldJson.siteUrl }}/oferta"
+            }
+        ]
+    }
+</script>

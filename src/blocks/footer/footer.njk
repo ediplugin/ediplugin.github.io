@@ -1,0 +1,53 @@
+<footer id="{{ footer.id }}" class="footer-section {{ footer.background }} {{ footer.text_color }} py-5">
+    <div class="container">
+        <!-- Подблок 1: Быстрые ссылки (4 колонки) -->
+        <div class="row mb-4 justify-content-between">
+            <!-- Колонка 1: Логотип -->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <div class="d-flex flex-column align-items-center">
+                    <img src="{{ footer.logo.image }}" alt="{{ footer.logo.alt }}" class="img-fluid mb-3" style="max-width: 120px;">
+                    <span class="text-center text-light">{{ footer.quick_links.logo[0].title }}</span>
+                </div>
+            </div>
+            
+            <!-- Колонка 2: Продукт -->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h4 class="h5 mb-3">Продукт</h4>
+                <ul class="list-unstyled">
+                    {% for link in footer.quick_links.product %}
+                    <li class="mb-2">
+                        <a href="{{ link.url }}" class="{{ footer.link_color }}">{{ link.title | safe }}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            
+            <!-- Колонка 3: Поддержка -->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h4 class="h5 mb-3">Поддержка</h4>
+                <ul class="list-unstyled">
+                    {% for link in footer.quick_links.support %}
+                    <li class="mb-2">
+                        <a href="{{ link.url }}" class="{{ footer.link_color }}">{{ link.title }}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+
+        <!-- Подблок 2: Нижняя строка -->
+        <hr class="my-4 border-secondary">
+        <div class="row">
+            <div class="col-md-6 mb-3 mb-md-0">
+                <p class="mb-0 small">
+                    © 2025 <a href="/" class="{{ footer.link_color }}">ediplugin.org</a> Все права защищены.
+                </p>
+            </div>
+            <div class="col-md-6 text-md-end">
+                <p class="mb-0 small text-secondary">
+                    Левашов Александр Владимирович, ИНН 940200303041
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>

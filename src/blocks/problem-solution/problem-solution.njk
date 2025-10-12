@@ -1,0 +1,58 @@
+<section id="{{ problemSolution.id }}" class="problem-solution-section {{ problemSolution.background }} py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10 text-center">
+                <h2 class="display-5 fw-bold mb-4 {{ problemSolution.title.color }}">{{ problemSolution.title.text }}</h2>
+                <p class="lead mb-5 {{ problemSolution.subtitle.color }}">{{ problemSolution.subtitle.text | safe }}</p>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-5 mb-4 mb-lg-0">
+                <div class="card h-100 border-danger">
+                    <div class="card-header bg-danger text-white text-center">
+                        <h3 class="h4 mb-0">Проблемы</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="list-group list-group-flush">
+                            {% for highlight in problemSolution.highlights %}
+                                <div class="list-group-item d-flex align-items-center gap-3 px-0">
+                                    <i class="bi bi-x-circle-fill text-danger fs-4"></i>
+                                    <span>{{ highlight.problem }}</span>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-5">
+                <div class="card h-100 border-success">
+                    <div class="card-header bg-success text-white text-center">
+                        <h3 class="h4 mb-0">Решения</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="list-group list-group-flush">
+                            {% for highlight in problemSolution.highlights %}
+                                <div class="list-group-item d-flex align-items-center gap-3 px-0">
+                                    <i class="bi bi-check-circle-fill text-success fs-4"></i>
+                                    <span>{{ highlight.solution }}</span>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center mt-5">
+            <div class="col-lg-8 text-center">
+                <div class="d-flex flex-column flex-md-row gap-3 justify-content-center">
+                    {% for cta in problemSolution.cta %}
+                        <a href="{{ cta.url }}" class="btn {{ cta.style }} btn-lg">{{ cta.text }}</a>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

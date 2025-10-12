@@ -1,0 +1,26 @@
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "{{ ldJson.service.name }}",
+        "serviceType": "Интеграция 1С и WooCommerce",
+        "description": "Платная услуга по настройке синхронизации между WooCommerce и 1С. Включает установку, настройку и тестирование обмена данными. Гарантируется корректная передача товаров и заказов. Подходит для любых конфигураций 1С, включая УТ и ERP.",
+        "provider": {{ ldJson.organization |dump | safe }},
+        "areaServed": {
+            "@type": "Country",
+            "name": "Россия"
+        },
+        "offers": {
+            "@type": "Offer",
+            "priceCurrency": "RUB",
+            "price": "5000",
+            "url": "{{ ldJson.service.url }}",
+            "availability": "https://schema.org/InStock",
+            "eligibleRegion": {
+                "@type": "Country",
+                "name": "Россия"
+            }
+        },
+        "image": "{{ ldJson.organization.logo }}"
+    }
+</script>

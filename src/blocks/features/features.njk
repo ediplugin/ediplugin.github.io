@@ -1,0 +1,36 @@
+<section id="{{ features.id }}" class="features-section {{ features.background }} py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10 text-center">
+                <h2 class="display-5 fw-bold mb-4 {{ features.title.color }}">{{ features.title.text }}</h2>
+                <p class="lead mb-5 {{ features.subtitle.color }}">{{ features.subtitle.text | safe }}</p>
+            </div>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+            {% for feature in features.features %}
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body text-center d-flex flex-column">
+                        <div class="mb-3">
+                            <i class="bi bi-{{ feature.icon }} text-primary fs-1"></i>
+                        </div>
+                        <h3 class="h5 mb-3">{{ feature.title }}</h3>
+                        <p class="mb-0">{{ feature.description }}</p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+        <div class="row justify-content-center mt-5">
+            <div class="col-lg-8 text-center">
+                <div class="d-flex flex-column flex-md-row gap-3 justify-content-center">
+                    {% for cta in features.cta %}
+                        <a href="{{ cta.url }}" class="btn {{ cta.style }} btn-lg">{{ cta.text }}</a>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,13 @@
+<section id="{{ cta.id }}" class="cta-section {{ cta.background }} py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+                <h2 class="display-5 fw-bold mb-4">{{ cta.title }}</h2>
+                <p class="lead mb-4">{{ cta.description | safe }}</p>
+                <div class="d-flex flex-wrap justify-content-center gap-3">
+                    <a href="{{ cta.primaryButton.link }}" class="btn btn-primary btn-lg">{{ cta.primaryButton.text }}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

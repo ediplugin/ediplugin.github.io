@@ -1,0 +1,36 @@
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Политика конфиденциальности",
+        "url": "{{ ldJson.siteUrl }}/privacy",
+        "inLanguage": "{{ ldJson.website.inLanguage }}",
+        "datePublished": "ЗАМЕНИТЕ_YYYY-MM-DD",
+        "dateModified": "ЗАМЕНИТЕ_YYYY-MM-DD",
+        "isPartOf": {
+            "@type": "WebSite",
+            "url": "{{ ldJson.siteUrl }}"
+        },
+        "publisher": {
+            "@type": "Person",
+            "name": "{{ ldJson.person.name }}",
+            "url": "{{ ldJson.person.url }}"
+        }
+    }
+</script>
+
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {{ ldJson.breadcrumbBase | dump }},
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Политика конфиденциальности",
+                "item": "{{ ldJson.siteUrl }}/privacy"
+            }
+        ]
+    }
+</script>

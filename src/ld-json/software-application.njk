@@ -1,0 +1,31 @@
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "EDI — Обмен данными между WooCommerce и 1С",
+        "alternateName": "EDI Plugin for WooCommerce and 1C",
+        "operatingSystem": "WordPress",
+        "applicationCategory": "BusinessApplication",
+        "description": "Бесплатный плагин для автоматической синхронизации товаров, остатков и заказов между WooCommerce и 1С. Работает на любом хостинге, без сложной настройки и доработок 1С.",
+        "softwareVersion": "3.0.0",
+        "url": "{{ ldJson.siteUrl }}/",
+        "downloadUrl": "https://wordpress.org/plugins/e-commerce-data-interchange/",
+        "image": "{{ ldJson.organization.logo }}",
+        "author": {{ ldJson.person | dump | safe }},
+        "publisher": {{ ldJson.organization | dump | safe }},
+        "license": "https://www.gnu.org/licenses/gpl-2.0.html",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "RUB",
+            "category": "Free",
+            "availability": "https://schema.org/InStock",
+            "url": "https://wordpress.org/plugins/e-commerce-data-interchange/"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5.0",
+            "ratingCount": "10"
+        }
+    }
+</script>

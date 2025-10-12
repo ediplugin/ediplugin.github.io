@@ -1,0 +1,21 @@
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "{{ ldJson.website.name }}",
+        "url": "{{ ldJson.website.url }}",
+        "description": "{{ ldJson.website.description }}",
+        "about": "{{ ldJson.website.about }}",
+        "copyrightYear": "{{ ldJson.website.copyrightYear }}",
+        "inLanguage": "{{ ldJson.website.inLanguage }}",
+        "publisher": {
+            "@type": "Organization",
+            "name": "{{ ldJson.organization.name }}",
+            "url": "{{ ldJson.organization.url }}",
+            "logo": "{{ ldJson.organization.logo }}",
+            "sameAs": {{ ldJson.organization.sameAs | dump | safe }}
+        },
+        "datePublished": "2022-04-182T00:00:00+00:00",
+        "dateModified":"2025-10-15T00:00:00+00:00"
+    }
+</script>

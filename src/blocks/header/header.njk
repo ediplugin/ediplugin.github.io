@@ -1,0 +1,46 @@
+<header id="{{ header.id }}" class="{{ header.background }} {{ header.text_color }} {{ header.sticky }} py-3">
+    <div class="container">
+        <div class="row align-items-center">
+            <!-- Часть 2: Название и рейтинг (прижата влево) -->
+            <div class="col-auto">
+                <div class="d-flex flex-column">
+                    <span>{{ header.title }}</span>
+                    <div class="d-flex align-items-end">
+                        <!-- Рейтинг: 5 звезд -->
+                        <div class="me-3 d-flex align-items-end">
+                            <span class="me-2 small">Рейтинг:</span>
+                            {% for i in [0,1,2,3,4] %}
+                                <i class="bi bi-star-fill text-warning me-1"></i>
+                            {% endfor %}
+                        </div>
+                        <!-- Скачивания -->
+                        <span class="small me-2">Скачиваний:</span>
+                        <span class="text-warning fw-semibold">{{ header.downloads }}</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Часть 1: Логотип (прижата влево) -->
+            <div class="col-auto order-lg-first">
+                <a href="/" class="d-flex align-items-center text-decoration-none">
+                    <img src="{{ header.logo.image }}" alt="{{ header.logo.alt }}" class="img-fluid me-2" style="max-width: 60px;">
+                </a>
+            </div>
+            
+            <!-- Часть 3: Меню навигации (прижата вправо) -->
+            <div class="col-auto ms-auto">
+                <nav id="navbar">
+                    <ul class="list-unstyled d-flex flex-wrap mb-0 gap-3">
+                        {% for link in header.navigation %}
+                        {% if link.title != "Контакты" %}
+                        <li>
+                            <a href="{{ link.url }}" class="{{ header.link_color }}">{{ link.title }}</a>
+                        </li>
+                        {% endif %}
+                        {% endfor %}
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
