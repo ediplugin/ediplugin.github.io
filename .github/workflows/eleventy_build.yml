@@ -22,5 +22,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: site
           publish_branch: gh-pages
-          destination_dir: .          # корень репозитория
-          keep_files: false
+          destination_dir: .
