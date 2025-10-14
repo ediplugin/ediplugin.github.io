@@ -1,0 +1,1156 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6VYXWMRGZS"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-6VYXWMRGZS');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Бесплатный плагин для автоматической синхронизации данных между WooCommerce и 1С. Автоматизация обмена товарами и заказами.">
+    <title>Синхронизация WooCommerce и 1С — плагин "EDI - Обмен данными между WooCommerce и 1С"</title>
+    <link rel="canonical" href="https://ediplugin.org/"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Organization","name":"Александр Левашов","url":"https://ediplugin.org","logo":"https://ediplugin.org/images/logo-white-tiny.png","email":"support@ediplugin.org","telephone":"+7-959-100-9750","image":["https://ediplugin.org/images/logo-white-tiny.png"],"address":{"@type":"PostalAddress","addressCountry":"RU"},"sameAs":["https://t.me/+8ytFwrYGYdwzOTRi","https://github.com/ediplugin","https://wordpress.org/plugins/e-commerce-data-interchange/"],"contactPoint":[{"@type":"ContactPoint","contactType":"technical support","email":"support@ediplugin.org","telephone":"+7-959-100-9750","url":"https://t.me/+8ytFwrYGYdwzOTRi","availableLanguage":["ru"]},{"@type":"ContactPoint","contactType":"sales","email":"sales@ediplugin.org","telephone":"+7-959-100-9750","url":"https://t.me/+8ytFwrYGYdwzOTRi","availableLanguage":["ru"]}]}
+</script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Person","name":"Александр Левашов","url":"https://ediplugin.org","jobTitle":"Разработчик EDI – Обмен данными между WooCommerce и 1С","email":"mailto:support@ediplugin.org","telephone":"+7-959-100-97-50","image":["https://ediplugin.org/images/logo-white-tiny.png"],"address":{"@type":"PostalAddress","addressCountry":"RU"},"sameAs":["https://t.me/+8ytFwrYGYdwzOTRi","https://github.com/ediplugin","https://wordpress.org/plugins/e-commerce-data-interchange/"],"contactPoint":{"@type":"ContactPoint","contactType":"technical support","email":"support@ediplugin.org","telephone":"+7-959-100-9750","url":"https://t.me/+8ytFwrYGYdwzOTRi","availableLanguage":["ru"]}}
+</script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "EDI – Обмен данными между WooCommerce и 1С",
+        "url": "https://ediplugin.org",
+        "description": "Плагин WordPress для автоматического обмена данными между WooCommerce и 1С: Предприятие",
+        "about": "Обмен данными между интернет-магазином на WooCommerce и системой учёта 1С",
+        "copyrightYear": "2025",
+        "inLanguage": "ru",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Александр Левашов",
+            "url": "https://ediplugin.org",
+            "logo": "https://ediplugin.org/images/logo-white-tiny.png",
+            "sameAs": ["https://t.me/+8ytFwrYGYdwzOTRi","https://github.com/ediplugin","https://wordpress.org/plugins/e-commerce-data-interchange/"]
+        },
+        "datePublished": "2022-04-182T00:00:00+00:00",
+        "dateModified":"2025-10-15T00:00:00+00:00"
+    }
+</script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "EDI — Обмен данными между WooCommerce и 1С",
+        "alternateName": "EDI Plugin for WooCommerce and 1C",
+        "operatingSystem": "WordPress",
+        "applicationCategory": "BusinessApplication",
+        "description": "Бесплатный плагин для автоматической синхронизации товаров, остатков и заказов между WooCommerce и 1С. Работает на любом хостинге, без сложной настройки и доработок 1С.",
+        "softwareVersion": "3.0.0",
+        "url": "https://ediplugin.org/",
+        "downloadUrl": "https://wordpress.org/plugins/e-commerce-data-interchange/",
+        "image": "https://ediplugin.org/images/logo-white-tiny.png",
+        "author": {"@context":"https://schema.org","@type":"Person","name":"Александр Левашов","url":"https://ediplugin.org","jobTitle":"Разработчик EDI – Обмен данными между WooCommerce и 1С","email":"mailto:support@ediplugin.org","telephone":"+7-959-100-97-50","image":["https://ediplugin.org/images/logo-white-tiny.png"],"address":{"@type":"PostalAddress","addressCountry":"RU"},"sameAs":["https://t.me/+8ytFwrYGYdwzOTRi","https://github.com/ediplugin","https://wordpress.org/plugins/e-commerce-data-interchange/"],"contactPoint":{"@type":"ContactPoint","contactType":"technical support","email":"support@ediplugin.org","telephone":"+7-959-100-9750","url":"https://t.me/+8ytFwrYGYdwzOTRi","availableLanguage":["ru"]}},
+        "publisher": {"@context":"https://schema.org","@type":"Organization","name":"Александр Левашов","url":"https://ediplugin.org","logo":"https://ediplugin.org/images/logo-white-tiny.png","email":"support@ediplugin.org","telephone":"+7-959-100-9750","image":["https://ediplugin.org/images/logo-white-tiny.png"],"address":{"@type":"PostalAddress","addressCountry":"RU"},"sameAs":["https://t.me/+8ytFwrYGYdwzOTRi","https://github.com/ediplugin","https://wordpress.org/plugins/e-commerce-data-interchange/"],"contactPoint":[{"@type":"ContactPoint","contactType":"technical support","email":"support@ediplugin.org","telephone":"+7-959-100-9750","url":"https://t.me/+8ytFwrYGYdwzOTRi","availableLanguage":["ru"]},{"@type":"ContactPoint","contactType":"sales","email":"sales@ediplugin.org","telephone":"+7-959-100-9750","url":"https://t.me/+8ytFwrYGYdwzOTRi","availableLanguage":["ru"]}]},
+        "license": "https://www.gnu.org/licenses/gpl-2.0.html",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "RUB",
+            "category": "Free",
+            "availability": "https://schema.org/InStock",
+            "url": "https://wordpress.org/plugins/e-commerce-data-interchange/"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5.0",
+            "ratingCount": "10"
+        }
+    }
+</script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Настройка синхронизации WooCommerce и 1С",
+        "serviceType": "Интеграция 1С и WooCommerce",
+        "description": "Платная услуга по настройке синхронизации между WooCommerce и 1С. Включает установку, настройку и тестирование обмена данными. Гарантируется корректная передача товаров и заказов. Подходит для любых конфигураций 1С, включая УТ и ERP.",
+        "provider": {"@context":"https://schema.org","@type":"Organization","name":"Александр Левашов","url":"https://ediplugin.org","logo":"https://ediplugin.org/images/logo-white-tiny.png","email":"support@ediplugin.org","telephone":"+7-959-100-9750","image":["https://ediplugin.org/images/logo-white-tiny.png"],"address":{"@type":"PostalAddress","addressCountry":"RU"},"sameAs":["https://t.me/+8ytFwrYGYdwzOTRi","https://github.com/ediplugin","https://wordpress.org/plugins/e-commerce-data-interchange/"],"contactPoint":[{"@type":"ContactPoint","contactType":"technical support","email":"support@ediplugin.org","telephone":"+7-959-100-9750","url":"https://t.me/+8ytFwrYGYdwzOTRi","availableLanguage":["ru"]},{"@type":"ContactPoint","contactType":"sales","email":"sales@ediplugin.org","telephone":"+7-959-100-9750","url":"https://t.me/+8ytFwrYGYdwzOTRi","availableLanguage":["ru"]}]},
+        "areaServed": {
+            "@type": "Country",
+            "name": "Россия"
+        },
+        "offers": {
+            "@type": "Offer",
+            "priceCurrency": "RUB",
+            "price": "5000",
+            "url": "https://ediplugin.org/#pricing",
+            "availability": "https://schema.org/InStock",
+            "eligibleRegion": {
+                "@type": "Country",
+                "name": "Россия"
+            }
+        },
+        "image": "https://ediplugin.org/images/logo-white-tiny.png"
+    }
+</script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "С какими версиями 1С и форматом обмена плагин совместим?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Совместим с конфигурациями 1С, поддерживающими CommerceML. Нестандартные доработки требуют отдельной проверки."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Какие данные по товарам передаются?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Товары и вариации, категории, атрибуты и значения, описания, изображения, цены и остатки."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Можно ли выполнять двусторонний обмен заказами?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Да. Плагин синхронизирует заказы сайт ↔ 1С, включая статусы и изменения состава заказа."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Какие требования к хостингу для работы плагина?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Специальных требований нет. Плагин стабильно работает на shared-хостинге, экономно расходует CPU и RAM."
+                }
+            }
+        ]
+    }
+</script>
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {"@type":"ListItem","position":1,"name":"Главная","item":"https://ediplugin.org/"}
+    ]
+}
+</script>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar">
+    
+<header id="header" class="bg-dark bg-gradient text-light sticky-top py-3">
+    <div class="container">
+        <div class="row align-items-center">
+            <!-- Часть 2: Название и рейтинг (прижата влево) -->
+            <div class="col-auto">
+                <div class="d-flex flex-column">
+                    <span>EDI – Обмен данными между WooCommerce и 1С</span>
+                    <div class="d-flex align-items-end">
+                        <!-- Рейтинг: 5 звезд -->
+                        <div class="me-3 d-flex align-items-end">
+                            <span class="me-2 small">Рейтинг:</span>
+                            
+                                <i class="bi bi-star-fill text-warning me-1"></i>
+                            
+                                <i class="bi bi-star-fill text-warning me-1"></i>
+                            
+                                <i class="bi bi-star-fill text-warning me-1"></i>
+                            
+                                <i class="bi bi-star-fill text-warning me-1"></i>
+                            
+                                <i class="bi bi-star-fill text-warning me-1"></i>
+                            
+                        </div>
+                        <!-- Скачивания -->
+                        <span class="small me-2">Скачиваний:</span>
+                        <span class="text-warning fw-semibold">7121</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Часть 1: Логотип (прижата влево) -->
+            <div class="col-auto order-lg-first">
+                <a href="/" class="d-flex align-items-center text-decoration-none">
+                    <img src="/images/logo-white-tiny.png" alt="EDI Plugin" class="img-fluid me-2" style="max-width: 60px;">
+                </a>
+            </div>
+            
+            <!-- Часть 3: Меню навигации (прижата вправо) -->
+            <div class="col-auto ms-auto">
+                <nav id="navbar">
+                    <ul class="list-unstyled d-flex flex-wrap mb-0 gap-3">
+                        
+                        
+                        <li>
+                            <a href="#features" class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Функции</a>
+                        </li>
+                        
+                        
+                        
+                        <li>
+                            <a href="#testimonials" class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Отзывы</a>
+                        </li>
+                        
+                        
+                        
+                        <li>
+                            <a href="#pricing" class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Цены</a>
+                        </li>
+                        
+                        
+                        
+                        <li>
+                            <a href="#faq" class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">FAQ</a>
+                        </li>
+                        
+                        
+                        
+                        
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+<section id="hero" class="hero-section bg-light position-relative">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+                <h1 class="display-4 fw-bold mb-4 text-dark">Автоматизируйте обмен данными между WooCommerce и 1С</h1>
+                <p class="lead mb-5 text-primary-emphasis">Работает на любом хостинге, без сложной настройки, готов к использованию сразу!</p>
+                <div class="d-flex flex-column flex-md-row gap-3 justify-content-center mb-5">
+                    
+                        <a href="#pricing" class="btn btn-primary btn-lg">Заказать настройку</a>
+                    
+                        <a href="https://wordpress.org/plugins/e-commerce-data-interchange/" class="btn btn-outline-primary btn-lg">Скачать бесплатно</a>
+                    
+                </div>
+                <div class="d-flex flex-column flex-sm-row gap-4 justify-content-center mb-5 text-center text-sm-start">
+                    
+                    <div class="d-flex align-items-center gap-2 flex-sm-nowrap justify-content-center">
+                        <i class="bi bi-check-circle-fill"></i>
+                        <span class="text-nowrap">Абсолютно бесплатно</span>
+                    </div>
+                    
+                    <div class="d-flex align-items-center gap-2 flex-sm-nowrap justify-content-center">
+                        <i class="bi bi-calendar-check"></i>
+                        <span class="text-nowrap">Настройка за 1 день</span>
+                    </div>
+                    
+                    <div class="d-flex align-items-center gap-2 flex-sm-nowrap justify-content-center">
+                        <i class="bi bi-server"></i>
+                        <span class="text-nowrap">Работает на любом хостинге</span>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="problem-solution" class="problem-solution-section bg-light py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10 text-center">
+                <h2 class="display-5 fw-bold mb-4 text-dark">Вы теряете часы и клиентов, если вручную синхронизируете интернет-магазин и 1С</h2>
+                <p class="lead mb-5 text-primary-emphasis">Плагин <strong>EDI - Обмен данными между WooCommerce и 1С</strong> автоматизирует обмен товарами и заказами, избавляя от ручных операций.</p>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-5 mb-4 mb-lg-0">
+                <div class="card h-100 border-danger">
+                    <div class="card-header bg-danger text-white text-center">
+                        <h3 class="h4 mb-0">Проблемы</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="list-group list-group-flush">
+                            
+                                <div class="list-group-item d-flex align-items-center gap-3 px-0">
+                                    <i class="bi bi-x-circle-fill text-danger fs-4"></i>
+                                    <span>Ручные выгрузки и правки вносят ошибки</span>
+                                </div>
+                            
+                                <div class="list-group-item d-flex align-items-center gap-3 px-0">
+                                    <i class="bi bi-x-circle-fill text-danger fs-4"></i>
+                                    <span>Цены и остатки расходятся с фактическими</span>
+                                </div>
+                            
+                                <div class="list-group-item d-flex align-items-center gap-3 px-0">
+                                    <i class="bi bi-x-circle-fill text-danger fs-4"></i>
+                                    <span>Ошибки всплывают уже после отгрузки</span>
+                                </div>
+                            
+                                <div class="list-group-item d-flex align-items-center gap-3 px-0">
+                                    <i class="bi bi-x-circle-fill text-danger fs-4"></i>
+                                    <span>Неполные или &quot;битые&quot; выгрузки</span>
+                                </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-5">
+                <div class="card h-100 border-success">
+                    <div class="card-header bg-success text-white text-center">
+                        <h3 class="h4 mb-0">Решения</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="list-group list-group-flush">
+                            
+                                <div class="list-group-item d-flex align-items-center gap-3 px-0">
+                                    <i class="bi bi-check-circle-fill text-success fs-4"></i>
+                                    <span>Автозапуск обмена без участия сотрудников</span>
+                                </div>
+                            
+                                <div class="list-group-item d-flex align-items-center gap-3 px-0">
+                                    <i class="bi bi-check-circle-fill text-success fs-4"></i>
+                                    <span>Синхронизация каталога, цен, остатков и изображений</span>
+                                </div>
+                            
+                                <div class="list-group-item d-flex align-items-center gap-3 px-0">
+                                    <i class="bi bi-check-circle-fill text-success fs-4"></i>
+                                    <span>Двусторонний обмен заказами со статусами</span>
+                                </div>
+                            
+                                <div class="list-group-item d-flex align-items-center gap-3 px-0">
+                                    <i class="bi bi-check-circle-fill text-success fs-4"></i>
+                                    <span>Прозрачные логи и уведомления об ошибках</span>
+                                </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center mt-5">
+            <div class="col-lg-8 text-center">
+                <div class="d-flex flex-column flex-md-row gap-3 justify-content-center">
+                    
+                        <a href="#pricing" class="btn btn-primary btn-lg">Заказать настройку</a>
+                    
+                        <a href="https://wordpress.org/plugins/e-commerce-data-interchange/" class="btn btn-outline-primary btn-lg">Скачать бесплатно</a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="features" class="features-section bg-light py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10 text-center">
+                <h2 class="display-5 fw-bold mb-4 text-dark">Всё, что нужно для синхронизации WooCommerce и 1С</h2>
+                <p class="lead mb-5 text-primary-emphasis">Плагин автоматически синхронизирует товары, остатки, цены и заказы, экономя время и снижая риск ошибок.</p>
+            </div>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+            
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body text-center d-flex flex-column">
+                        <div class="mb-3">
+                            <i class="bi bi-gear text-primary fs-1"></i>
+                        </div>
+                        <h3 class="h5 mb-3">Работает с основными конфигурациями</h3>
+                        <p class="mb-0">Поддержка 1С:Управление торговлей, 1С:Розница, 1С:Управление нашей фирмой и других</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body text-center d-flex flex-column">
+                        <div class="mb-3">
+                            <i class="bi bi-box-seam text-primary fs-1"></i>
+                        </div>
+                        <h3 class="h5 mb-3">Выгрузка товаров</h3>
+                        <p class="mb-0">Список товаров и вариантов, изображения, категории, атрибуты, цены и остатки.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body text-center d-flex flex-column">
+                        <div class="mb-3">
+                            <i class="bi bi-arrow-left-right text-primary fs-1"></i>
+                        </div>
+                        <h3 class="h5 mb-3">Двусторонний обмен заказами</h3>
+                        <p class="mb-0">Двусторонний обмен информацией о заказах между вашим сайтом и 1С.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body text-center d-flex flex-column">
+                        <div class="mb-3">
+                            <i class="bi bi-file-earmark-zip text-primary fs-1"></i>
+                        </div>
+                        <h3 class="h5 mb-3">Сжатие данных</h3>
+                        <p class="mb-0">Поддерживает передачу данных в сжатом виде для экономии трафика.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body text-center d-flex flex-column">
+                        <div class="mb-3">
+                            <i class="bi bi-journal-text text-primary fs-1"></i>
+                        </div>
+                        <h3 class="h5 mb-3">Логирование</h3>
+                        <p class="mb-0">Полное логирование процесса синхронизации для отладки.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body text-center d-flex flex-column">
+                        <div class="mb-3">
+                            <i class="bi bi-server text-primary fs-1"></i>
+                        </div>
+                        <h3 class="h5 mb-3">Нетребовательный к хостингу</h3>
+                        <p class="mb-0">Отсутствие специальных требований к хостингу для стабильной работы.</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="row justify-content-center mt-5">
+            <div class="col-lg-8 text-center">
+                <div class="d-flex flex-column flex-md-row gap-3 justify-content-center">
+                    
+                        <a href="#pricing" class="btn btn-primary btn-lg">Заказать настройку</a>
+                    
+                        <a href="https://wordpress.org/plugins/e-commerce-data-interchange/" class="btn btn-outline-primary btn-lg">Скачать бесплатно</a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="testimonials" class="testimonials-section bg-light py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10 text-center">
+                <h2 class="display-5 fw-bold mb-4 text-dark">Отзывы пользователей</h2>
+                <p class="lead mb-5 text-primary-emphasis">Что говорят пользователи о нашем плагине</p>
+            </div>
+        </div>
+
+        <!-- Сетка отзывов -->
+        <div class="row g-4">
+            
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card h-100 shadow-sm">
+    <div class="card-body d-flex flex-column">
+        <div class="mb-3 d-flex justify-content-between align-items-center">
+            <i class="bi bi-quote text-primary fs-1"></i>
+            <div class="d-flex align-items-center">
+                <div class="flex-shrink-0">
+                    <img src="https://secure.gravatar.com/avatar/fb00eba7de21b41561a0d39be60e1d19746c26429c2c6db0a8e90be59547c978?s=60&amp;d=retro&amp;r=g" alt="sanyavb0" class="rounded-circle" width="48" height="48">
+                </div>
+                <div class="flex-grow-1 ms-3">
+                    <h6 class="mb-0"><a href="https://wordpress.org/support/topic/%d0%be%d1%82%d0%bb%d0%b8%d1%87%d0%bd%d1%8b%d0%b9-%d0%bf%d0%bb%d0%b0%d0%b3%d0%b8%d0%bd-945/" target="_blank" class="text-decoration-none text-dark">sanyavb0</a></h6>
+
+                    <!-- Рейтинг -->
+                    <div class="mb-3">
+                        
+                            <i class="bi bi-star-fill text-warning"></i>
+                        
+                            <i class="bi bi-star-fill text-warning"></i>
+                        
+                            <i class="bi bi-star-fill text-warning"></i>
+                        
+                            <i class="bi bi-star-fill text-warning"></i>
+                        
+                            <i class="bi bi-star-fill text-warning"></i>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Заголовок отзыва -->
+        <h6 class="mb-3 fw-bold small">Отличный плагин</h6>
+
+        <p class="mb-4 small">Отличный плагин для синхронизации сайта и 1с. Пользуемся уже год. Полет нормальный. Товары выгружает, заказы загружает.</p>
+    </div>
+</div>
+                </div>
+            
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card h-100 shadow-sm">
+    <div class="card-body d-flex flex-column">
+        <div class="mb-3 d-flex justify-content-between align-items-center">
+            <i class="bi bi-quote text-primary fs-1"></i>
+            <div class="d-flex align-items-center">
+                <div class="flex-shrink-0">
+                    <img src="https://secure.gravatar.com/avatar/5c352fb5b43e801989ec3d67e97f573c4281921c41267f72523fe642d4a98e4b?s=60&amp;d=retro&amp;r=g" alt="paulmclaren" class="rounded-circle" width="48" height="48">
+                </div>
+                <div class="flex-grow-1 ms-3">
+                    <h6 class="mb-0"><a href="https://wordpress.org/support/topic/%d1%85%d0%be%d1%80%d0%be%d1%88%d0%b5%d0%b5-%d1%80%d0%b5%d1%88%d0%b5%d0%bd%d0%b8%d0%b5-%d0%bd%d0%b0-%d1%81%d0%b5%d0%b3%d0%be%d0%b4%d0%bd%d1%8f%d1%88%d0%bd%d0%b8%d0%b9-%d0%b4%d0%b5%d0%bd%d1%8c/" target="_blank" class="text-decoration-none text-dark">paulmclaren</a></h6>
+
+                    <!-- Рейтинг -->
+                    <div class="mb-3">
+                        
+                            <i class="bi bi-star-fill text-warning"></i>
+                        
+                            <i class="bi bi-star-fill text-warning"></i>
+                        
+                            <i class="bi bi-star-fill text-warning"></i>
+                        
+                            <i class="bi bi-star-fill text-warning"></i>
+                        
+                            <i class="bi bi-star-fill text-warning"></i>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Заголовок отзыва -->
+        <h6 class="mb-3 fw-bold small">Хорошее решение на сегодняшний день</h6>
+
+        <p class="mb-4 small">Пользуюсь, пока полет нормальный, обмен заказами работает в обе стороны</p>
+    </div>
+</div>
+                </div>
+            
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card h-100 shadow-sm">
+    <div class="card-body d-flex flex-column">
+        <div class="mb-3 d-flex justify-content-between align-items-center">
+            <i class="bi bi-quote text-primary fs-1"></i>
+            <div class="d-flex align-items-center">
+                <div class="flex-shrink-0">
+                    <img src="https://secure.gravatar.com/avatar/7e71ffd9704cd7707b6af3cddfd992a2ce95cdc5394107bd7d538c3a1228ce6b?s=60&amp;d=retro&amp;r=g" alt="mvwhack" class="rounded-circle" width="48" height="48">
+                </div>
+                <div class="flex-grow-1 ms-3">
+                    <h6 class="mb-0"><a href="https://wordpress.org/support/topic/%d0%b4%d0%be%d1%81%d1%82%d0%be%d0%b9%d0%bd%d1%8b%d0%b9-%d0%bf%d0%bb%d0%b3%d0%b0%d0%b8%d0%bd/" target="_blank" class="text-decoration-none text-dark">mvwhack</a></h6>
+
+                    <!-- Рейтинг -->
+                    <div class="mb-3">
+                        
+                            <i class="bi bi-star-fill text-warning"></i>
+                        
+                            <i class="bi bi-star-fill text-warning"></i>
+                        
+                            <i class="bi bi-star-fill text-warning"></i>
+                        
+                            <i class="bi bi-star-fill text-warning"></i>
+                        
+                            <i class="bi bi-star-fill text-warning"></i>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Заголовок отзыва -->
+        <h6 class="mb-3 fw-bold small">Достойный плагин</h6>
+
+        <p class="mb-4 small">Перекопал кучу плагинов и инструкций, этот оказался действительно самым простым и надежным в использовании!</p>
+    </div>
+</div>
+                </div>
+            
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card h-100 shadow-sm">
+    <div class="card-body d-flex flex-column">
+        <div class="mb-3 d-flex justify-content-between align-items-center">
+            <i class="bi bi-quote text-primary fs-1"></i>
+            <div class="d-flex align-items-center">
+                <div class="flex-shrink-0">
+                    <img src="https://secure.gravatar.com/avatar/dddd176cec000fa2fa34a70986173fe145f8e71a3522a0106d7cae1126841c00?s=60&amp;d=retro&amp;r=g" alt="dianisi" class="rounded-circle" width="48" height="48">
+                </div>
+                <div class="flex-grow-1 ms-3">
+                    <h6 class="mb-0"><a href="https://wordpress.org/support/topic/%d0%be%d1%82%d0%bb%d0%b8%d1%87%d0%bd%d1%8b%d0%b9-%d0%bf%d0%bb%d0%b0%d0%b3%d0%b8%d0%bd-810/" target="_blank" class="text-decoration-none text-dark">dianisi</a></h6>
+
+                    <!-- Рейтинг -->
+                    <div class="mb-3">
+                        
+                            <i class="bi bi-star-fill text-warning"></i>
+                        
+                            <i class="bi bi-star-fill text-warning"></i>
+                        
+                            <i class="bi bi-star-fill text-warning"></i>
+                        
+                            <i class="bi bi-star-fill text-warning"></i>
+                        
+                            <i class="bi bi-star-fill text-warning"></i>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Заголовок отзыва -->
+        <h6 class="mb-3 fw-bold small">Отличный плагин</h6>
+
+        <p class="mb-4 small">Отличный плагин. Работает быстро. Ничего лишнего. Синхронизирует отлично!!! Отдельно хочется отметить отзывчивость службы поддержки. Помогают, объясняют. Они мне очень помогли, за что им отдельное спасибо!!! Полностью рабочий плагин!</p>
+    </div>
+</div>
+                </div>
+            
+        </div>
+    </div>
+</section>
+<section id="pricing" class="pricing-section bg-light py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10 text-center">
+                <h2 class="display-5 fw-bold mb-4 text-dark">Тарифные планы</h2>
+                <p class="lead mb-5 text-primary-emphasis">Выберите подходящий тариф для вашего бизнеса</p>
+            </div>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+            
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm position-relative">
+                        
+                        <div class="card-header bg-light text-center py-4">
+                            <h3 class="mb-0">Бесплатный</h3>
+                        </div>
+                        <div class="card-body d-flex flex-column text-center py-4">
+                            <ul class="list-unstyled mb-4 text-start">
+                                
+                                    <li class="py-1">
+                                        <i class="bi bi-check-circle-fill text-success me-2"></i>Совместим со всеми конфигурациями 1С
+                                    </li>
+
+                                    
+                                
+                                    <li class="py-1">
+                                        <i class="bi bi-check-circle-fill text-success me-2"></i>Работает на любом сайте
+                                    </li>
+
+                                    
+                                
+                                    <li class="py-1">
+                                        <i class="bi bi-check-circle-fill text-success me-2"></i>Синхронизация каталога товаров
+                                    </li>
+
+                                    
+                                
+                                    <li class="py-1">
+                                        <i class="bi bi-check-circle-fill text-success me-2"></i>Синхронизация заказов
+                                    </li>
+
+                                    
+                                
+                                    <li class="py-1">
+                                        <i class="bi bi-check-circle-fill text-success me-2"></i>Полная синхронизация или только изменения
+                                    </li>
+
+                                    
+                                
+                                    <li class="py-1">
+                                        <i class="bi bi-check-circle-fill text-success me-2"></i>Экономное использование ресурсов сервера
+                                    </li>
+
+                                    
+                                
+                                    <li class="py-1">
+                                        <i class="bi bi-check-circle-fill text-success me-2"></i>Полное логирование процесса
+                                    </li>
+
+                                    
+                                
+                                    <li class="py-1">
+                                        <i class="bi bi-check-circle-fill text-success me-2"></i>Индикация процесса синхронизации
+                                    </li>
+
+                                    
+                                
+                                    <li class="py-1">
+                                        <i class="bi bi-check-circle-fill text-success me-2"></i>Поддержка в сообществе пользователей
+                                    </li>
+
+                                    
+                                
+                            </ul>
+                            <div class="mt-auto">
+                                <span class="display-4 fw-bold">0 ₽</span>
+                                <span class="d-block text-muted">цена</span>
+                            </div>
+                            <div class="mt-3">
+                                <a href="https://wordpress.org/plugins/e-commerce-data-interchange/" target="_blank"
+                                   class="btn btn-outline-primary w-100">Установить плагин</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm border-primary border-2 position-relative">
+                        
+                            <span class="position-absolute top-0 start-50 translate-middle badge border border-primary bg-white text-primary shadow-sm px-3 py-2">
+                                Разумный выбор
+                            </span>
+                        
+                        <div class="card-header bg-primary text-white text-center py-4">
+                            <h3 class="mb-0">Основной</h3>
+                        </div>
+                        <div class="card-body d-flex flex-column text-center py-4">
+                            <ul class="list-unstyled mb-4 text-start">
+                                
+                                    <li class="py-1">
+                                        <i class="bi bi-check-circle-fill text-success me-2"></i>Все опции тарифа &quot;Бесплатный&quot;
+                                    </li>
+
+                                    
+                                        <li class="py-1 text-center">
+                                            <i class="bi bi-plus text-primary fs-4"></i>
+                                        </li>
+                                    
+                                
+                                    <li class="py-1">
+                                        <i class="bi bi-check-circle-fill text-success me-2"></i>Настройка синхронизации &quot;под ключ&quot;
+                                    </li>
+
+                                    
+                                
+                                    <li class="py-1">
+                                        <i class="bi bi-check-circle-fill text-success me-2"></i>Гарантия на безошибочную синхронизацию
+                                    </li>
+
+                                    
+                                
+                                    <li class="py-1">
+                                        <i class="bi bi-check-circle-fill text-success me-2"></i>Личная поддержка разработчика
+                                    </li>
+
+                                    
+                                
+                            </ul>
+                            <div class="mt-auto">
+                                <span class="display-4 fw-bold">5000 ₽<span class="fs-6 text">/ сайт</span></span>
+                                <span class="d-block text-muted">цена</span>
+                            </div>
+                            <div class="mt-3">
+                                <a href="https://t.me/m/IUgcVghpMzky" target="_blank"
+                                   class="btn btn-primary w-100">Заказать настройку</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm position-relative">
+                        
+                        <div class="card-header bg-light text-center py-4">
+                            <h3 class="mb-0">Индивидуальный</h3>
+                        </div>
+                        <div class="card-body d-flex flex-column text-center py-4">
+                            <ul class="list-unstyled mb-4 text-start">
+                                
+                                    <li class="py-1">
+                                        <i class="bi bi-check-circle-fill text-success me-2"></i>Все опции тарифа &quot;Основной&quot;
+                                    </li>
+
+                                    
+                                        <li class="py-1 text-center">
+                                            <i class="bi bi-plus text-primary fs-4"></i>
+                                        </li>
+                                    
+                                
+                                    <li class="py-1">
+                                        <i class="bi bi-check-circle-fill text-success me-2"></i>Индивидуальные условия настройки синхронизации
+                                    </li>
+
+                                    
+                                
+                                    <li class="py-1">
+                                        <i class="bi bi-check-circle-fill text-success me-2"></i>Индивидуальные условия гарантии и обслуживание
+                                    </li>
+
+                                    
+                                
+                            </ul>
+                            <div class="mt-auto">
+                                <span class="display-4 fw-bold">Договорная</span>
+                                <span class="d-block text-muted">цена</span>
+                            </div>
+                            <div class="mt-3">
+                                <a href="https://t.me/m/1Rh0eF4iODhi" target="_blank"
+                                   class="btn btn-outline-primary w-100">Связаться с разработчиком</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+        </div>
+    </div>
+</section>
+<section id="faq" class="faq-section bg-light py-5">
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-12 text-center">
+                <h2 class="display-5 fw-bold mb-3">Часто задаваемые вопросы</h2>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="accordion" id="faqAccordion">
+                    
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading-hosting-requirements">
+                            <button class="fw-semibold accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-hosting-requirements" aria-expanded="true" aria-controls="collapse-hosting-requirements">
+                                Какие требования к хостингу для работы плагина?
+                            </button>
+                        </h2>
+                        <div id="collapse-hosting-requirements" class="accordion-collapse collapse show" aria-labelledby="heading-hosting-requirements" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Специальных требований нет. Плагин стабильно работает на shared-хостинге, экономно расходует CPU и RAM.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading-compat-1c">
+                            <button class="fw-semibold accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-compat-1c" aria-expanded="false" aria-controls="collapse-compat-1c">
+                                С какими версиями 1С и форматом обмена плагин совместим?
+                            </button>
+                        </h2>
+                        <div id="collapse-compat-1c" class="accordion-collapse collapse" aria-labelledby="heading-compat-1c" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Совместим с конфигурациями 1С, поддерживающими CommerceML. Нестандартные доработки требуют отдельной проверки.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading-duration">
+                            <button class="fw-semibold accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-duration" aria-expanded="false" aria-controls="collapse-duration">
+                                Как быстро выполняется настройка?
+                            </button>
+                        </h2>
+                        <div id="collapse-duration" class="accordion-collapse collapse" aria-labelledby="heading-duration" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Обычно в течение 1–2 рабочих дней.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading-first-sync">
+                            <button class="fw-semibold accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-first-sync" aria-expanded="false" aria-controls="collapse-first-sync">
+                                Как выполняется первая синхронизация?
+                            </button>
+                        </h2>
+                        <div id="collapse-first-sync" class="accordion-collapse collapse" aria-labelledby="heading-first-sync" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Первая загрузка — полная. Дальше возможны инкрементальные обмены только изменившимися данными.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading-two-way-order-sync">
+                            <button class="fw-semibold accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-two-way-order-sync" aria-expanded="false" aria-controls="collapse-two-way-order-sync">
+                                Можно ли выполнять двусторонний обмен заказами?
+                            </button>
+                        </h2>
+                        <div id="collapse-two-way-order-sync" class="accordion-collapse collapse" aria-labelledby="heading-two-way-order-sync" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Да. Плагин синхронизирует заказы сайт ↔ 1С, включая статусы и изменения состава заказа.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading-order-status-mapping">
+                            <button class="fw-semibold accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-order-status-mapping" aria-expanded="false" aria-controls="collapse-order-status-mapping">
+                                Как обновляются статусы заказов по данным 1С?
+                            </button>
+                        </h2>
+                        <div id="collapse-order-status-mapping" class="accordion-collapse collapse" aria-labelledby="heading-order-status-mapping" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Статусы на сайте меняются по событиям из 1С: оплата, отгрузка, проведение, пометка удаления.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading-products-scope">
+                            <button class="fw-semibold accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-products-scope" aria-expanded="false" aria-controls="collapse-products-scope">
+                                Какие данные по товарам передаются?
+                            </button>
+                        </h2>
+                        <div id="collapse-products-scope" class="accordion-collapse collapse" aria-labelledby="heading-products-scope" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Товары и вариации, категории, атрибуты и значения, описания, изображения, цены и остатки.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading-price-types">
+                            <button class="fw-semibold accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-price-types" aria-expanded="false" aria-controls="collapse-price-types">
+                                Поддерживаются ли несколько типов цен и распродажная цена?
+                            </button>
+                        </h2>
+                        <div id="collapse-price-types" class="accordion-collapse collapse" aria-labelledby="heading-price-types" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Да. Можно указать базовую и распродажную цену из разных типов цен 1С.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading-stock-warehouses">
+                            <button class="fw-semibold accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-stock-warehouses" aria-expanded="false" aria-controls="collapse-stock-warehouses">
+                                Как учитывать остатки со складов?
+                            </button>
+                        </h2>
+                        <div id="collapse-stock-warehouses" class="accordion-collapse collapse" aria-labelledby="heading-stock-warehouses" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Можно выбрать склады для учёта или исключения. Остатки суммируются по выбранным складам.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading-matching-rules">
+                            <button class="fw-semibold accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-matching-rules" aria-expanded="false" aria-controls="collapse-matching-rules">
+                                Как сопоставляются товары и категории при обновлении?
+                            </button>
+                        </h2>
+                        <div id="collapse-matching-rules" class="accordion-collapse collapse" aria-labelledby="heading-matching-rules" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Товары — по наименованию, артикулу и идентификаторам. Категории — по названиям с учётом иерархии. Доступны правила объединения свойств.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading-images-and-alt">
+                            <button class="fw-semibold accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-images-and-alt" aria-expanded="false" aria-controls="collapse-images-and-alt">
+                                Как обрабатываются изображения и alt-тексты?
+                            </button>
+                        </h2>
+                        <div id="collapse-images-and-alt" class="accordion-collapse collapse" aria-labelledby="heading-images-and-alt" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Поддерживаются картинки товаров и вариаций. Alt может формироваться из названия товара.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading-partial-vs-full">
+                            <button class="fw-semibold accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-partial-vs-full" aria-expanded="false" aria-controls="collapse-partial-vs-full">
+                                Возможна ли частичная синхронизация вместо полной?
+                            </button>
+                        </h2>
+                        <div id="collapse-partial-vs-full" class="accordion-collapse collapse" aria-labelledby="heading-partial-vs-full" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Да. Доступны полная и частичная синхронизация, а также обмен только изменёнными объектами.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading-compression-and-chunking">
+                            <button class="fw-semibold accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-compression-and-chunking" aria-expanded="false" aria-controls="collapse-compression-and-chunking">
+                                Поддерживается ли сжатие и разбиение файлов?
+                            </button>
+                        </h2>
+                        <div id="collapse-compression-and-chunking" class="accordion-collapse collapse" aria-labelledby="heading-compression-and-chunking" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Да. Передача в zip-архиве и разбиение на части для обхода лимитов хостинга.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading-logging-and-monitoring">
+                            <button class="fw-semibold accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-logging-and-monitoring" aria-expanded="false" aria-controls="collapse-logging-and-monitoring">
+                                Есть ли логирование и индикация процесса?
+                            </button>
+                        </h2>
+                        <div id="collapse-logging-and-monitoring" class="accordion-collapse collapse" aria-labelledby="heading-logging-and-monitoring" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Да. Полные логи обмена, прогресс выполнения, возможность прервать процесс.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading-security-access">
+                            <button class="fw-semibold accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-security-access" aria-expanded="false" aria-controls="collapse-security-access">
+                                Какие доступы нужны для настройки обмена?
+                            </button>
+                        </h2>
+                        <div id="collapse-security-access" class="accordion-collapse collapse" aria-labelledby="heading-security-access" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Доступ в админку сайта, FTP/SSH при необходимости, параметры узла обмена и учётные данные для 1С.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading-staging-recommendation">
+                            <button class="fw-semibold accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-staging-recommendation" aria-expanded="false" aria-controls="collapse-staging-recommendation">
+                                Нужно ли настраивать обмен на тестовом сайте?
+                            </button>
+                        </h2>
+                        <div id="collapse-staging-recommendation" class="accordion-collapse collapse" aria-labelledby="heading-staging-recommendation" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Рекомендуется начать с тестового сайта, проверить корректность обмена и только потом запускать на живом сайте.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading-version-compat">
+                            <button class="fw-semibold accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-version-compat" aria-expanded="false" aria-controls="collapse-version-compat">
+                                С какими версиями WordPress/WooCommerce работает плагин?
+                            </button>
+                        </h2>
+                        <div id="collapse-version-compat" class="accordion-collapse collapse" aria-labelledby="heading-version-compat" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Поддерживаются актуальные стабильные версии WordPress и WooCommerce. Перед обновлением делайте резервную копию.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading-docs-and-service">
+                            <button class="fw-semibold accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-docs-and-service" aria-expanded="false" aria-controls="collapse-docs-and-service">
+                                Где получить документацию и помощь с настройкой?
+                            </button>
+                        </h2>
+                        <div id="collapse-docs-and-service" class="accordion-collapse collapse" aria-labelledby="heading-docs-and-service" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Доступна платная пошаговая документация и услуга настройки «под ключ». Также работает Telegram-сообщество.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading-faq-support-channels">
+                            <button class="fw-semibold accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-faq-support-channels" aria-expanded="false" aria-controls="collapse-faq-support-channels">
+                                Куда обратиться при возникновении вопросов?
+                            </button>
+                        </h2>
+                        <div id="collapse-faq-support-channels" class="accordion-collapse collapse" aria-labelledby="heading-faq-support-channels" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                В Telegram-группу сообщества или в баг-трекер GitHub. Желательно приложить логи обмена.
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="cta" class="cta-section bg-light py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+                <h2 class="display-5 fw-bold mb-4">Готовы начать работу с плагином?</h2>
+                <p class="lead mb-4">Установите плагин <strong>EDI - Обмен данными между WooCommerce и 1С</strong> и автоматизируйте обмен данными между WooCommerce и 1С уже сегодня!</p>
+                <div class="d-flex flex-wrap justify-content-center gap-3">
+                    <a href="#pricing" class="btn btn-primary btn-lg">Да, настроить синхронизацию!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer id="footer" class="footer-section bg-dark bg-gradient text-light py-5">
+    <div class="container">
+        <!-- Подблок 1: Быстрые ссылки (4 колонки) -->
+        <div class="row mb-4 justify-content-between">
+            <!-- Колонка 1: Логотип -->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <div class="d-flex flex-column align-items-center">
+                    <img src="/images/logo-white-tiny.png" alt="EDI Plugin" class="img-fluid mb-3" style="max-width: 120px;">
+                    <span class="text-center text-light">EDI - Обмен данными между WooCommerce и 1С</span>
+                </div>
+            </div>
+            
+            <!-- Колонка 2: Продукт -->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h4 class="h5 mb-3">Продукт</h4>
+                <ul class="list-unstyled">
+                    
+                    <li class="mb-2">
+                        <a href="https://wordpress.org/plugins/e-commerce-data-interchange/" class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Скачать плагин</a>
+                    </li>
+                    
+                    <li class="mb-2">
+                        <a href="#" class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Документация <span class="badge text-bg-info">скоро</span></a>
+                    </li>
+                    
+                </ul>
+            </div>
+            
+            <!-- Колонка 3: Поддержка -->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h4 class="h5 mb-3">Поддержка</h4>
+                <ul class="list-unstyled">
+                    
+                    <li class="mb-2">
+                        <a href="/privacy-policy/" class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Политика конфиденциальности</a>
+                    </li>
+                    
+                    <li class="mb-2">
+                        <a href="https://t.me/+wwxTBJYDECthMjFi" class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Telegram-сообщество</a>
+                    </li>
+                    
+                    <li class="mb-2">
+                        <a href="https://github.com/ediplugin/e-commerce-data-interchange/issues" class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">GitHub Issues</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+
+        <!-- Подблок 2: Нижняя строка -->
+        <hr class="my-4 border-secondary">
+        <div class="row">
+            <div class="col-md-6 mb-3 mb-md-0">
+                <p class="mb-0 small">
+                    © 2025 <a href="/" class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">ediplugin.org</a> Все права защищены.
+                </p>
+            </div>
+            <div class="col-md-6 text-md-end">
+                <p class="mb-0 small text-secondary">
+                    Левашов Александр Владимирович, ИНН 940200303041
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
