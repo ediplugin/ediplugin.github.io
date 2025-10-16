@@ -24,7 +24,6 @@
 - История версий (Changelog) → `#`
 
 #### Колонка 3 — Поддержка
-- Telegram-сообщество → `#`
 - GitHub Issues → `https://github.com/ediplugin/e-commerce-data-interchange/issues`
 
 #### Колонка 4 — Информация

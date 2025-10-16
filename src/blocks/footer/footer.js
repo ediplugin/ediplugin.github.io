@@ -30,10 +30,6 @@ module.exports = {
                 url: "/privacy-policy/"
             },
             {
-                title: "Telegram-сообщество",
-                url: "https://t.me/+wwxTBJYDECthMjFi"
-            },
-            {
                 title: "GitHub Issues",
                 url: "https://github.com/ediplugin/e-commerce-data-interchange/issues"
             }
