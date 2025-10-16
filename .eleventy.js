@@ -5,6 +5,9 @@ module.exports = function (eleventyConfig) {
     // Copy images
     eleventyConfig.addPassthroughCopy("src/images");
 
+    // Copy CNAME for production hosting
+    eleventyConfig.addPassthroughCopy("CNAME");
+
     eleventyConfig.addGlobalData("ldJson", require('./src/ld-json/ld-json.js'));
 
     // Add global data from block files dynamically
