@@ -26,16 +26,16 @@ module.exports = {
         ],
         support: [
             {
-                title: "Политика конфиденциальности",
-                url: "/privacy-policy/"
-            },
-            {
-                title: "Telegram",
-                url: "https://t.me/edipluginbot?start"
+                title: "Служба поддержки",
+                url: "https://support.ediplugin.org/"
             },
             {
                 title: "GitHub Issues",
                 url: "https://github.com/ediplugin/e-commerce-data-interchange/issues"
+            },
+            {
+                title: "Политика конфиденциальности",
+                url: "/privacy-policy/"
             }
         ]
     }

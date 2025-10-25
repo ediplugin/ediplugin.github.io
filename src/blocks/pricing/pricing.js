@@ -41,7 +41,7 @@ module.exports = {
                 "Личная поддержка разработчика"
             ],
             cta: "Заказать настройку",
-            ctaLink: "https://t.me/edipluginbot?start=plan-main",
+            ctaLink: "https://support.ediplugin.org/index.php?a=add&custom1=Заказать%20базовую%20настройку",
             popular: true,
             featured: true
         },
@@ -55,7 +55,7 @@ module.exports = {
                 "Индивидуальные условия гарантии и обслуживание"
             ],
             cta: "Связаться с разработчиком",
-            ctaLink: "https://t.me/edipluginbot?start=plan-individual",
+            ctaLink: "https://support.ediplugin.org/index.php?a=add&custom1=Заказать%20индивидуальную%20настройку",
             popular: false,
             featured: false
         }
