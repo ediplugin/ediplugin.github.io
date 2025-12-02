@@ -6,7 +6,7 @@ module.exports = {
         color: "text-dark"
     },
     subtitle: {
-        text: "Что говорят пользователи о нашем плагине",
+        text: "Отзывы пользователей после запуска синхронизации",
         color: "text-primary-emphasis"
     },
     testimonials: [

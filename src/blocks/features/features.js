@@ -2,23 +2,23 @@ module.exports = {
     id: "features",
     background: "bg-light",
     title: {
-        text: "Всё, что нужно для синхронизации WooCommerce и 1С",
+        text: "Что вы получите после настройки?",
         color: "text-dark"
     },
     subtitle: {
-        text: "Плагин автоматически синхронизирует товары, остатки, цены и заказы, экономя время и снижая риск ошибок.",
+        text: "Синхронизацию товаров, остатков, цен и заказов. Все работает автоматически, экономя время и снижая риск ошибок.",
         color: "text-primary-emphasis"
     },
     features: [
         {
             id: "configurations",
-            title: "Работает с основными конфигурациями",
+            title: "Работу с основными конфигурациями",
             description: "Поддержка 1С:Управление торговлей, 1С:Розница, 1С:Управление нашей фирмой и других",
             icon: "gear"
         },
         {
             id: "products-export",
-            title: "Выгрузка товаров",
+            title: "Выгрузку товаров",
             description: "Список товаров и вариантов, изображения, категории, атрибуты, цены и остатки.",
             icon: "box-seam"
         },
@@ -31,7 +31,7 @@ module.exports = {
         {
             id: "data-compression",
             title: "Сжатие данных",
-            description: "Поддерживает передачу данных в сжатом виде для экономии трафика.",
+            description: "Поддержку передачу данных в сжатом виде для экономии трафика.",
             icon: "file-earmark-zip"
         },
         {
@@ -42,7 +42,7 @@ module.exports = {
         },
         {
             id: "hosting-flexibility",
-            title: "Нетребовательный к хостингу",
+            title: "Работу на любом хостинге",
             description: "Отсутствие специальных требований к хостингу для стабильной работы.",
             icon: "server"
         }
@@ -50,13 +50,8 @@ module.exports = {
     cta: [
         {
             style: "btn-primary",
-            text: "Заказать настройку",
+            text: "Заказать настройку под ключ",
             url: "#pricing"
-        },
-        {
-            style: "btn-outline-primary",
-            text: "Скачать бесплатно",
-            url: "https://wordpress.org/plugins/e-commerce-data-interchange/"
         }
     ]
 };

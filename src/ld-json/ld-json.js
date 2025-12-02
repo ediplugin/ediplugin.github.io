@@ -69,7 +69,7 @@ module.exports = {
             "@type": "ContactPoint",
             contactType: "technical support",
             email: "support@ediplugin.org",
-            telephone: "+7-959-100-9750",
+            telephone: "+7-959-100-97-50",
             url: "https://t.me/+8ytFwrYGYdwzOTRi",
             availableLanguage: ["ru"]
         }

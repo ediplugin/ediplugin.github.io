@@ -2,11 +2,11 @@ module.exports = {
     id: "problem-solution",
     background: "bg-light",
     title: {
-        text: "Вы теряете часы и клиентов, если вручную синхронизируете интернет-магазин и 1С",
+        text: "Ручная синхронизация магазина и 1С отнимает часы и приводит к ошибкам",
         color: "text-dark"
     },
     subtitle: {
-        text: "Плагин <strong>EDI - Обмен данными между WooCommerce и 1С</strong> автоматизирует обмен товарами и заказами, избавляя от ручных операций.",
+        text: "Я настрою автоматический обмен товарами и заказами для вашего интернет-магазина. После настройки система будет работать без ручных операций.",
         color: "text-primary-emphasis"
     },
     highlights: [
@@ -30,13 +30,8 @@ module.exports = {
     cta: [
         {
             style: "btn-primary",
-            text: "Заказать настройку",
+            text: "Заказать настройку под ключ",
             url: "#pricing"
-        },
-        {
-            style: "btn-outline-primary",
-            text: "Скачать бесплатно",
-            url: "https://wordpress.org/plugins/e-commerce-data-interchange/"
         }
     ]
 };

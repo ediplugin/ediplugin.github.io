@@ -2,28 +2,23 @@ module.exports = {
     id: "hero",
     background: "bg-light",
     title: {
-        text: "Автоматизируйте обмен данными между WooCommerce и 1С",
+        text: "Настрою обмен данными между 1С и WooCommerce под ключ",
         color: "text-dark"
     },
     subtitle: {
-        text: "Работает на любом хостинге, без сложной настройки, готов к использованию сразу!",
+        text: "Настройку проводит лично автор плагина \"EDI – Обмен данными между WooCommerce и 1С\". Фиксированная цена. Плагин бесплатно!",
         color: "text-primary-emphasis"
     },
     cta: [
         {
             style: "btn-primary",
-            text: "Заказать настройку",
+            text: "Заказать настройку под ключ",
             url: "#pricing"
-        },
-        {
-            style: "btn-outline-primary",
-            text: "Скачать бесплатно",
-            url: "https://wordpress.org/plugins/e-commerce-data-interchange/"
         }
     ],
     highlights: [
         {
-            text: "Абсолютно бесплатно",
+            text: "Гарантия результата",
             icon: "check-circle-fill"
         },
         {
