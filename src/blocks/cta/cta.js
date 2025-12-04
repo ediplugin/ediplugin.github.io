@@ -5,6 +5,6 @@ module.exports = {
     description: "Закажите настройку обмена данными между WooCommerce и 1С. Все будет работать уже завтра.",
     primaryButton: {
         text: "Да, настроить синхронизацию!",
-        link: "#pricing"
+        link: "https://support.ediplugin.org/index.php?a=add&custom1=Заказать%20настройку"
     }
 };

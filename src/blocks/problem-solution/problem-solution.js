@@ -31,7 +31,7 @@ module.exports = {
         {
             style: "btn-primary",
             text: "Заказать настройку под ключ",
-            url: "#pricing"
+            url: "https://support.ediplugin.org/index.php?a=add&custom1=Заказать%20настройку"
         }
     ]
 };
