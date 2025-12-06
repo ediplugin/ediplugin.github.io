@@ -10,7 +10,7 @@ module.exports = {
   },
   title: "EDI – Обмен данными между WooCommerce и 1С",
   rating: 5,
-  downloads: 8195,
+  downloads: 8232,
   navigation: [
     {
       title: "Результат",
