@@ -1,0 +1,28 @@
+<!-- Modal Popup для заказа синхронизации -->
+<div class="modal fade" id="orderPopup" tabindex="-1" aria-labelledby="orderPopupLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="orderPopupLabel">{{ orderPopup.title }}</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+            </div>
+            <div class="modal-body">
+                <div class="qr-codes-container">
+                    {% for qr in orderPopup.qrCodes %}
+                    <div class="qr-code-item">
+                        <a href="{{ qr.link }}" target="_blank" rel="noopener noreferrer" class="qr-code-link">
+                            <img src="{{ qr.src }}" alt="{{ qr.alt }}" class="qr-code-image" loading="lazy">
+                        </a>
+                        <p class="qr-code-label">{{ qr.label }}</p>
+                    </div>
+                    {% endfor %}
+                </div>
+                <div class="text-center mt-4">
+                    <a href="{{ orderPopup.supportLink }}" class="btn btn-outline-secondary" target="_blank" rel="noopener noreferrer">
+                        {{ orderPopup.supportText }}
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,3 +1,50 @@
 .link-info.active {
     --bs-link-underline-opacity: 1;
 }
+
+/* Modal Popup для заказа синхронизации */
+#orderPopup .qr-codes-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+#orderPopup .qr-code-item {
+    text-align: center;
+}
+
+#orderPopup .qr-code-image {
+    width: 200px;
+    height: auto;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#orderPopup .qr-code-label {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0;
+}
+
+#orderPopup .qr-code-link {
+    display: inline-block;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#orderPopup .qr-code-link:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+#orderPopup .qr-code-link:focus {
+    outline: 2px solid #0d6efd;
+    outline-offset: 2px;
+}
+
+@media (max-width: 576px) {
+    #orderPopup .qr-codes-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+}
