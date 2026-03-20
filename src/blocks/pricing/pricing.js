@@ -13,9 +13,7 @@ module.exports = {
         {
             id: "main",
             name: "Настройка лично автором плагина",
-            price: "5000 ₽<span class=\"fs-6 text\"> разово</span>",
-            originalPrice: "7000 ₽",
-            badge: "Специальная новогодняя цена!",
+            price: "7000 ₽<span class=\"fs-6 text\"> разово</span>",
             features: [
                 "Настройка синхронизации <b>под ключ</b>",
                 "Синхронизация каталога товаров",
@@ -30,11 +28,7 @@ module.exports = {
             cta: "Заказать настройку",
             ctaLink: "https://support.levashov.co/index.php?a=add",
             popular: true,
-            featured: true,
-            promotion: {
-                text: "Специальная новогодняя цена!",
-                endDate: "Новогодняя цена до 14 января",
-            }
+            featured: true
         },
         {
             id: "individual",
