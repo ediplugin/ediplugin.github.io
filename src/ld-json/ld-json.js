@@ -20,7 +20,7 @@ module.exports = {
             "addressCountry": "RU"
         },
         sameAs: [
-            "https://t.me/+8ytFwrYGYdwzOTRi",
+            "https://levashov.co/",
             "https://github.com/ediplugin",
             "https://wordpress.org/plugins/e-commerce-data-interchange/"
         ],
@@ -30,7 +30,7 @@ module.exports = {
                 contactType: "technical support",
                 email: "support@ediplugin.org",
                 telephone: "+7-959-100-9750",
-                url: "https://t.me/+8ytFwrYGYdwzOTRi",
+                url: "https://levashov.co/",
                 availableLanguage: ["ru"]
             },
             {
@@ -38,7 +38,7 @@ module.exports = {
                 contactType: "sales",
                 email: "sales@ediplugin.org",
                 telephone: "+7-959-100-9750",
-                url: "https://t.me/+8ytFwrYGYdwzOTRi",
+                url: "https://levashov.co/",
                 availableLanguage: ["ru"]
             }
         ]
@@ -61,7 +61,7 @@ module.exports = {
             "addressCountry": "RU"
         },
         sameAs: [
-            "https://t.me/+8ytFwrYGYdwzOTRi",
+            "https://levashov.co/",
             "https://github.com/ediplugin",
             "https://wordpress.org/plugins/e-commerce-data-interchange/"
         ],
@@ -70,7 +70,7 @@ module.exports = {
             contactType: "technical support",
             email: "support@ediplugin.org",
             telephone: "+7-959-100-97-50",
-            url: "https://t.me/+8ytFwrYGYdwzOTRi",
+            url: "https://levashov.co/",
             availableLanguage: ["ru"]
         }
     },

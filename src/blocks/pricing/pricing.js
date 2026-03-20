@@ -28,7 +28,7 @@ module.exports = {
                 "Личная поддержка от <b>автора плагина</b>",
             ],
             cta: "Заказать настройку",
-            ctaLink: "https://t.me/edipluginbot?start=setup",
+            ctaLink: "https://support.levashov.co/index.php?a=add",
             popular: true,
             featured: true,
             promotion: {
@@ -46,7 +46,7 @@ module.exports = {
                 "Мгновенное уведомление в Telegram",
             ],
             cta: "Заказать мониторинг",
-            ctaLink: "https://t.me/edipluginbot?start=monitoring",
+            ctaLink: "https://support.levashov.co/index.php?a=add&custom1=Заказать мониторинг",
             popular: false,
             featured: false
         }

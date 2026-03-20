@@ -31,7 +31,7 @@ module.exports = {
         {
             style: "btn-primary",
             text: "Заказать настройку под ключ",
-            url: "https://t.me/edipluginbot?start=setup"
+            url: "https://support.levashov.co/index.php?a=add"
         }
     ]
 };
