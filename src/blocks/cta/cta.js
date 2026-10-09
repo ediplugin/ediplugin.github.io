@@ -5,6 +5,7 @@ module.exports = {
     description: "Закажите настройку обмена данными между WooCommerce и 1С. Все будет работать уже завтра.",
     primaryButton: {
         text: "Да, настроить синхронизацию!",
-        link: "https://support.levashov.co/index.php?a=add"
+        link: "https://support.levashov.co/index.php?a=add",
+        goal: "order_setup_footer"
     }
 };

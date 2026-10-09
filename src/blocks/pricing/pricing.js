@@ -27,6 +27,7 @@ module.exports = {
             ],
             cta: "Заказать настройку",
             ctaLink: "https://support.levashov.co/index.php?a=add",
+            ctaGoal: "order_setup_pricing",
             popular: true,
             featured: true
         },
@@ -41,6 +42,7 @@ module.exports = {
             ],
             cta: "Заказать мониторинг",
             ctaLink: "https://support.levashov.co/index.php?a=add&custom1=Заказать мониторинг",
+            ctaGoal: "order_monitoring",
             popular: false,
             featured: false
         }

@@ -8,6 +8,13 @@ module.exports = function (eleventyConfig) {
     // Copy CNAME for production hosting
     eleventyConfig.addPassthroughCopy("CNAME");
 
+    // Copy robots.txt and sitemap.xml to the site root
+    eleventyConfig.addPassthroughCopy("src/robots.txt");
+    eleventyConfig.addPassthroughCopy("src/sitemap.xml");
+
+    // Yandex.Metrika counter ID
+    eleventyConfig.addGlobalData("metrikaId", 113587144);
+
     eleventyConfig.addGlobalData("ldJson", require('./src/ld-json/ld-json.js'));
 
     // Add global data from block files dynamically

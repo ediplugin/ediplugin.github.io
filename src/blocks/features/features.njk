@@ -27,7 +27,7 @@
             <div class="col-lg-8 text-center">
                 <div class="d-flex flex-column flex-md-row gap-3 justify-content-center">
                     {% for cta in features.cta %}
-                        <a href="{{ cta.url }}" class="btn {{ cta.style }} btn-lg">{{ cta.text }}</a>
+                        <a href="{{ cta.url }}" class="btn {{ cta.style }} btn-lg"{% if cta.goal %} onclick="ym({{ metrikaId }},'reachGoal','{{ cta.goal }}')"{% endif %}>{{ cta.text }}</a>
                     {% endfor %}
                 </div>
             </div>

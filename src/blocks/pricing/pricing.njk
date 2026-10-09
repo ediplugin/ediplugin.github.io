@@ -45,7 +45,7 @@
                                 {% endif %}
                             </div>
                             <div class="mt-3">
-                                <a href="{{ plan.ctaLink }}" target="_blank"
+                                <a href="{{ plan.ctaLink }}" target="_blank"{% if plan.ctaGoal %} onclick="ym({{ metrikaId }},'reachGoal','{{ plan.ctaGoal }}')"{% endif %}
                                    class="btn {% if plan.featured %}btn-primary{% else %}btn-outline-primary{% endif %} w-100">{{ plan.cta }}</a>
                             </div>
                         </div>

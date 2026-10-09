@@ -5,7 +5,7 @@
                 <h2 class="display-5 fw-bold mb-4">{{ cta.title }}</h2>
                 <p class="lead mb-4">{{ cta.description | safe }}</p>
                 <div class="d-flex flex-wrap justify-content-center gap-3">
-                    <a href="{{ cta.primaryButton.link }}" class="btn btn-primary btn-lg">{{ cta.primaryButton.text }}</a>
+                    <a href="{{ cta.primaryButton.link }}" class="btn btn-primary btn-lg"{% if cta.primaryButton.goal %} onclick="ym({{ metrikaId }},'reachGoal','{{ cta.primaryButton.goal }}')"{% endif %}>{{ cta.primaryButton.text }}</a>
                 </div>
             </div>
         </div>
