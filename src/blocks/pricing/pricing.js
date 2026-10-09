@@ -26,7 +26,7 @@ module.exports = {
                 "Личная поддержка от <b>автора плагина</b>",
             ],
             cta: "Заказать настройку",
-            ctaLink: "https://support.levashov.co/index.php?a=add",
+            ctaLink: "https://support.levashov.co/index.php?a=add&category=2",
             ctaGoal: "order_setup_pricing",
             popular: true,
             featured: true
@@ -41,7 +41,7 @@ module.exports = {
                 "Мгновенное уведомление в Telegram",
             ],
             cta: "Заказать мониторинг",
-            ctaLink: "https://support.levashov.co/index.php?a=add&custom1=Заказать мониторинг",
+            ctaLink: "https://support.levashov.co/index.php?a=add&category=2&custom1=Заказать мониторинг",
             ctaGoal: "order_monitoring",
             popular: false,
             featured: false
